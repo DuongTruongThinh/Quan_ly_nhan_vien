@@ -139,15 +139,7 @@ function kiemTraChucVu(idErr, value) {
 function kiemTraSearchLoaiNhanVien(idErr, value) {
   const loaiNhanVien = ["xuất sắc", "giỏi", "khá", "trung bình"];
   var valueHopLe = loaiNhanVien.includes(value);
-  console.log(
-    "🚀 ~ file: validate.js:142 ~ kiemTraSearchLoaiNhanVien ~ valueHopLe:",
-    valueHopLe
-  );
   if (valueHopLe == false) {
-    console.log(
-      "🚀 ~ file: validate.js:143 ~ kiemTraSearchLoaiNhanVien ~ valueHopLe:",
-      valueHopLe
-    );
     document.getElementById(idErr).innerHTML =
       "Điền loại nhân viên hợp lệ (xuất sắc, giỏi, khá, trung bình)";
     document.getElementById(idErr).style.display = "block";
@@ -156,9 +148,4 @@ function kiemTraSearchLoaiNhanVien(idErr, value) {
     document.getElementById(idErr).innerHTML = "";
     return true;
   }
-}
-function troLaiDSNV(idErr) {
-  renderDSNV(dsnv);
-  document.getElementById("searchName").style.display = "";
-  document.getElementById(idErr).style.display = "";
 }

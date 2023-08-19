@@ -60,7 +60,6 @@ document.getElementById("btnTimNV").addEventListener("click", function () {
   var value = document.getElementById("searchName").value;
   value = value.toLowerCase();
   var kiemTra = kiemTraSearchLoaiNhanVien(idErr, value);
-  console.log("🚀 ~ file: main.js:63 ~ kiemTra:", kiemTra);
   if (kiemTra == false) {
     return;
   } else {

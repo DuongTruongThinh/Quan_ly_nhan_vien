@@ -94,3 +94,8 @@ function renderDSNV_theoLoaiNhanVien(dsnv) {
   }
   document.getElementById("tableDanhSach").innerHTML = contentHTML;
 }
+function troLaiDSNV(idErr) {
+  renderDSNV(dsnv);
+  document.getElementById("searchName").value = "";
+  document.getElementById(idErr).style.display = "";
+}
